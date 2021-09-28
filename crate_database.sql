@@ -1,0 +1,1 @@
+create database if not exists game_poll;
