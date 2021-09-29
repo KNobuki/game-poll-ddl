@@ -1,4 +1,4 @@
-CREATE TABLE game_poll.polling_place (
+CREATE TABLE IF NOT EXISTS game_poll.polling_place (
     id int NOT NULL,
     vote_type_id int NOT NULL,
     create_time datetime NOT NULL,

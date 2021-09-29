@@ -1,4 +1,4 @@
-CREATE TABLE game_poll.game (
+CREATE TABLE IF NOT EXISTS game_poll.game (
     id int NOT NULL,
     name varchar(256) NOT NULL,
     category_id int NOT NULL,
