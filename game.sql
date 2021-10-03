@@ -4,5 +4,6 @@ CREATE TABLE IF NOT EXISTS game_poll.game (
     category_id int NOT NULL,
     PRIMARY KEY (id),
     INDEX name_index (name),
-    INDEX category_id_index (category_id)
+    INDEX category_id_index (category_id),
+    FOREIGN KEY (category_id) REFERENCE game_category(id)
 );
